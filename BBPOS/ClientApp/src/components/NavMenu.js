@@ -5,7 +5,6 @@ import { LinkContainer } from 'react-router-bootstrap';
 import './NavMenu.css';
 
 
-let isOnline = () => window.navigator.onLine;
 export default props => (
   <Navbar inverse fixedTop fluid collapseOnSelect>
     <Navbar.Header>
@@ -21,18 +20,13 @@ export default props => (
             <Glyphicon glyph='home' /> Home
           </NavItem>
         </LinkContainer>
-        <LinkContainer to={'/counter'}>
-          <NavItem>
-            <Glyphicon glyph='education' /> Counter
-          </NavItem>
-        </LinkContainer>
+       
         <LinkContainer to={'/fetchdata'}>
           <NavItem>
             <Glyphicon glyph='th-list' /> Fetch data
           </NavItem>
         </LinkContainer>
-        <LinkContainer to={'/fetchdata'}>
-        </LinkContainer>
+       
       </Nav>
     </Navbar.Collapse>
     
